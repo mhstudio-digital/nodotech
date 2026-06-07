@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-black/10 bg-white">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-10 text-sm text-black/60 sm:flex-row sm:justify-between sm:px-6">
-        <p>© 2025 NodoTech · Costa Rica</p>
+        <p>© 2026 NodoTech · Costa Rica</p>
         <nav className="flex items-center gap-6">
           <Link href="/" className="transition-colors hover:text-[#2563EB]">
             Inicio
