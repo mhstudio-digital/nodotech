@@ -50,6 +50,9 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: ["/og-default.svg"],
   },
+  verification: {
+    google: "HDGp3LB1G51oPAZLcvSLb6JPW6kYBqky3x8muGTv3rg",
+  },
 };
 
 export default function RootLayout({
