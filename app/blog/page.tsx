@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import ArticleCard from "@/components/ArticleCard";
 import AdSlot from "@/components/AdSlot";
+import BlogSearch from "@/components/BlogSearch";
 import { getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
@@ -49,11 +49,10 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
       </header>
 
       <div className="grid gap-12 lg:grid-cols-[1fr_300px]">
-        <div className="grid gap-8 sm:grid-cols-2">
-          {posts.map((post) => (
-            <ArticleCard key={post.slug} post={post} />
-          ))}
-          {posts.length === 0 && (
+        <div>
+          {posts.length > 0 ? (
+            <BlogSearch posts={posts} />
+          ) : (
             <p className="text-black/60">Todavía no hay artículos en esta categoría. Vuelve pronto.</p>
           )}
         </div>

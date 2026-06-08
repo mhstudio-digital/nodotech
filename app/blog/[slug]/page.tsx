@@ -4,7 +4,10 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import AdSlot from "@/components/AdSlot";
+import ShareButtons from "@/components/ShareButtons";
 import { getAllPosts, getPostBySlug, getPostSlugs } from "@/lib/posts";
+
+const SITE_URL = "https://nodotech.vercel.app";
 
 type ArticlePageProps = {
   params: Promise<{ slug: string }>;
@@ -113,6 +116,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
       <div className="prose prose-neutral max-w-none prose-headings:font-display prose-headings:font-bold prose-a:text-[#2563EB] prose-a:no-underline hover:prose-a:underline">
         <MDXRemote source={remainder} components={mdxComponents} />
+      </div>
+
+      <div className="mt-10">
+        <ShareButtons title={frontmatter.title} url={`${SITE_URL}/blog/${slug}`} />
       </div>
 
       {otherPosts.length > 0 && (
