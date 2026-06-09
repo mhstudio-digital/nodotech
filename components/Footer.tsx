@@ -14,7 +14,7 @@ export default function Footer() {
             </p>
           </div>
           <a
-            href="https://wa.me/50683674466?text=Hola,%20vi%20NodoTech%20y%20me%20interesa%20una%20web%20para%20mi%20negocio"
+            href="https://mhstudio-digital.github.io/mh-studio-web/"
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-colors hover:bg-white/90"
