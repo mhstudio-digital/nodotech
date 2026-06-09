@@ -69,6 +69,31 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* CTA MH Studio */}
+      <section className="mt-20 mb-4">
+        <div className="rounded-2xl bg-[#f4f4f5] px-8 py-12 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="max-w-xl">
+            <span className="inline-block rounded-full bg-black/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-black/60 mb-3">
+              ¿Listo para crecer?
+            </span>
+            <h2 className="text-3xl font-bold tracking-tight text-black leading-tight">
+              Llevá tu negocio al mundo digital con MH Studio
+            </h2>
+            <p className="mt-3 text-black/60 text-base">
+              Creamos sitios web rápidos, modernos y optimizados para negocios en Costa Rica. Desde ₡175,000.
+            </p>
+          </div>
+          <a
+            href="https://wa.me/50683674466?text=Hola,%20vi%20NodoTech%20y%20me%20interesa%20una%20web%20para%20mi%20negocio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 rounded-full bg-black px-8 py-4 text-sm font-semibold text-white transition-colors hover:bg-black/80"
+          >
+            Hablemos por WhatsApp →
+          </a>
+        </div>
+      </section>
     </div>
   );
 }
